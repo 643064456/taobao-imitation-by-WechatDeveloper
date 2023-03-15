@@ -1,0 +1,91 @@
+/* pages/detail/detail.wxss */
+swiper image{
+  width: 100vw;
+  height: 800rpx;
+}
+
+swiper{
+  height: 800rpx;
+}
+
+.tabBar{
+  display: flex;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  width: 100vw;
+}
+
+.tabBar view{
+  flex: 1;
+  font-weight: bold;
+}
+
+.tabBar .active{
+  border-bottom: #f60 solid;
+}
+
+.tabBar .inactive{
+  background-color: #ddd;
+}
+
+.detail image{
+  width: 100vw;
+}
+
+.review{
+  margin: 20rpx;
+}
+
+.left{
+  width: 100rpx;
+  border-radius: 100rpx;
+  float: left;
+  margin: 20rpx;
+  border: solid black 1rpx;
+}
+
+.nickname{
+  font-size: 40rpx;
+  margin: 22rpx;
+  margin-bottom: 10rpx;
+}
+
+.creationTime{
+  font-size: 30rpx;
+  color: gray;
+}
+
+.user{
+  margin-top: 20rpx;
+  overflow: hidden;
+  border-top: #ccc solid 1rpx;
+}
+
+.pic{
+  width: 400rpx;
+}
+
+.bottom{
+  display: flex;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.add{
+  flex: 1;
+  background-color: #f80;
+  color: #fff;
+}
+
+.buy{
+  flex: 1;
+  background-color: #f50;
+  color: #fff;
+}

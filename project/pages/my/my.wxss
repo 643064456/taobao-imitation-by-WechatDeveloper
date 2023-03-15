@@ -1,0 +1,26 @@
+/* pages/my/my.wxss */
+.user{
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.user image{
+  width: 200rpx;
+  border-radius: 100rpx;
+  float: left;
+  margin: 30rpx;
+  margin-right: 50rpx;
+  margin-top: 50rpx;
+}
+
+.nickname{
+  font-size: 40rpx;
+  margin: 40rpx;
+  margin-top: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.welcome{
+  font-size: 30rpx;
+  color: gray;
+}

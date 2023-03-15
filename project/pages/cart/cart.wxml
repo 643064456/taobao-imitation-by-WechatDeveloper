@@ -1,0 +1,33 @@
+<!--pages/cart/cart.wxml-->
+<mp-cells ext-class="my-cells" title="桃饱自营" footer="左滑删除商品" wx:if="{{cartList.length}}">
+  <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" wx:for="{{cartList}}" wx:key="index" data-id="{{item.id}}">
+    <mp-cell>
+      <view class="content">
+        <checkbox checked="{{item.checked}}" bindtap="handleCheck" data-item="{{item}}"></checkbox>
+        <image src="http://localhost:5001{{item.good.poster}}" mode="aspectFit"></image>
+        <view>
+          <view >{{item.good.title}}</view>
+          <view style="color: red;">{{item.good.price}}元</view>
+        </view>
+      </view>
+      <view slot="footer" class="changeNum">
+        <view bindtap="handleLeft" data-item="{{item}}">-</view>
+        <view class="num">{{item.number}}</view>
+        <view bindtap="handleRight" data-item="{{item}}">+</view>
+      </view>
+    </mp-cell>
+  </mp-slideview>
+</mp-cells>
+<view wx:else>
+  <view class="empty0">购物车竟然是空的</view>
+  <view class="empty1">再忙，也要记得买点什么犒赏自己~</view>
+</view>
+<wxs src="./cart.wxs" module="obj"></wxs>
+<view class="footer">
+    <checkbox-group bindchange="handleChecked">
+      <checkbox checked="{{obj.check(cartList)}}"></checkbox>
+    </checkbox-group>
+    <view style="margin-right:20px;">全选</view>
+    <view >合计：￥{{obj.sum(cartList)}}</view>
+    <button >结算</button>
+</view>

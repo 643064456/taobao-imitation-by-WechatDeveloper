@@ -1,0 +1,22 @@
+<!--pages/my/my.wxml-->
+<view class="user">
+  <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+  <view>
+    <view class="nickname">{{userInfo.nickName}}</view>
+    <view class="welcome">欢迎回来，亲爱的桃饱会员！</view>
+  </view>
+</view>
+<mp-cells ext-class="my-cells" >
+   <mp-cell value="个人信息">
+    <mp-icon slot="icon" type="field" icon="me" color="#f60" size="{{25}}"></mp-icon>
+    <mp-icon slot="icon" type="field" icon="arrow"  size="{{10}}" slot="footer"></mp-icon>
+   </mp-cell>
+   <mp-cell value="我的订单">
+    <mp-icon slot="icon" type="field" icon="note" color="#f60" size="{{25}}"></mp-icon>
+    <mp-icon slot="icon" type="field" icon="arrow"  size="{{10}}" slot="footer"></mp-icon>
+   </mp-cell>
+   <mp-cell value="应用设置">
+    <mp-icon slot="icon" type="field" icon="setting" color="#f60" size="{{25}}"></mp-icon>
+    <mp-icon slot="icon" type="field" icon="arrow"  size="{{10}}" slot="footer"></mp-icon>
+  </mp-cell>         
+</mp-cells>

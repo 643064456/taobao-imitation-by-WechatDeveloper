@@ -1,0 +1,22 @@
+/* pages/sort/sort.wxss */
+page{
+  height: 100%;
+}
+
+.content{
+  width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.goodsBox{
+  padding: 20rpx;
+  overflow: hidden;
+}
+
+.goodsBox image{
+  width: 220rpx;
+  float: left;
+}

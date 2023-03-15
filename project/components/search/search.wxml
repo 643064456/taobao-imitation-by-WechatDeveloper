@@ -1,0 +1,4 @@
+<!--components/search/search.wxml-->
+<view class="background">
+  <input class="input" placeholder="搜索商品" bindtap="handleTap"></input>
+</view>

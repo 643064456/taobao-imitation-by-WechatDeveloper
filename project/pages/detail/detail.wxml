@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<mp-sticky offset-top="0">
+    <search bindevent="handleEvent"></search>
+</mp-sticky>
+<swiper>
+  <swiper-item wx:for="{{info.slides}}" wx:key="index">
+    <image src="http://localhost:5001{{item}}" mode="aspectFit" bindtap="handleSwiper" data-id="http://localhost:5001{{item}}"></image>
+  </swiper-item>
+</swiper>
+<mp-sticky offset-top="34.39">
+  <view class="tabBar">
+    <view class="{{index==0?'active':'inactive'}}" bindtap="handleTap" data-index="{{0}}">商品详情</view>
+    <view class="{{index==1?'active':'inactive'}}" bindtap="handleTap" data-index="{{1}}">用户评价</view>
+  </view>
+</mp-sticky>
+<view>
+  <view wx:if="{{index==0}}" class="detail">
+    <image wx:for="{{info.desc}}" wx:key="index" src="{{item}}" mode="widthFix"></image>
+  </view>
+  <view wx:else class="review">
+    <view wx:for="{{review}}" wx:key="index">
+      <view class="user">
+        <image src="http://localhost:5001{{item.userImageUrl}}" mode="widthFix" class="left"></image>
+        <view>
+          <view class="nickname">{{item.nickname}}</view>
+          <view class="creationTime">{{item.creationTime}}</view>
+        </view>
+      </view>
+      <view>{{item.content}}</view>
+      <image src="http://localhost:5001{{item.imgUrl}}" mode="widthFix" class="pic"></image>
+    </view>
+  </view>
+</view>
+<view class="bottom">
+  <view class="add" bindtap="handldeAdd">加入购物车</view>
+  <view class="buy" bindtap="handldeBuy">立即购买</view>
+</view>

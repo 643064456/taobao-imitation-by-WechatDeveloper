@@ -1,0 +1,27 @@
+/* pages/searchlist/searchlist.wxss */
+.goodsBox{
+  padding: 20rpx;
+  overflow: hidden;
+}
+
+.goodsBox image{
+  width: 280rpx;
+  float: left;
+}
+
+.top{
+  display: flex;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  width: 100vw;
+}
+
+.price{
+  flex: 1;
+}
+
+.review{
+  flex: 1;
+}

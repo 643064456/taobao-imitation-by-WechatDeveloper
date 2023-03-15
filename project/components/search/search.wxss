@@ -1,0 +1,15 @@
+/* components/search/search.wxss */
+.input{
+  border: 2rpx solid black;
+  border-radius: 10rpx;
+  margin: 10rpx;
+  margin-top: 0rpx;
+  padding: 10rpx;
+  height: 30rpx;
+  background-color: #eee;
+  width: 94.5vw;
+}
+
+.background{
+  background-color: white;
+}

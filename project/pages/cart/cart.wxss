@@ -1,0 +1,62 @@
+/* pages/cart/cart.wxss */
+.footer{
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  line-height: 80rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+}
+
+.footer button{
+  background: #f60;
+  color: #fff;
+  border-radius: 50rpx;
+}
+
+.changeNum{
+  border-radius: 50rpx;
+  background-color: #fff;
+  border: 1rpx black solid;
+}
+
+.changeNum view{
+  width: 60rpx;
+  display: inline-block;
+  text-align: center;
+}
+
+.num{
+  border-left: 1rpx black solid;
+  border-right:  1rpx black solid;
+}
+
+.content{
+  display: flex;
+}
+
+.content image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content checkbox{
+  line-height: 200rpx;
+}
+
+.empty0{
+  margin-top: 100rpx;
+  text-align: center;
+  color: #555;
+  font-size: large;
+}
+
+.empty1{
+  text-align: center;
+  margin-top: 30rpx;
+  color: gray;
+  font-size: small;
+}
